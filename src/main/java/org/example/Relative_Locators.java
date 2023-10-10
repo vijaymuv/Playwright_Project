@@ -9,6 +9,7 @@ public class Relative_Locators {
         BrowserContext browserContext = browser.newContext();
         Page page = browserContext.newPage();
         page.navigate("https://letcode.in/test");
+        // debugging code
         page.pause();
         page.locator("//a[.='Edit']").click();
         page.waitForTimeout(3000);

@@ -11,7 +11,8 @@ public class RecordVideo {
         Playwright playwright = Playwright.create();
         BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setHeadless(false);
         Browser browser = playwright.chromium().launch(launchOptions);
-        Browser.NewContextOptions newContextOptions = new Browser.NewContextOptions().setRecordVideoDir(Paths.get("videos/")).setRecordVideoSize(1280, 720);
+        Browser.NewContextOptions newContextOptions = new Browser.NewContextOptions().
+                setRecordVideoDir(Paths.get("videos/")).setRecordVideoSize(1280, 720);
         BrowserContext browserContext = browser.newContext(newContextOptions);
         Page page = browserContext.newPage();
         page.navigate("https://www.itbusinessbook.com/");

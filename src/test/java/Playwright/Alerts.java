@@ -18,7 +18,17 @@ public class Alerts {
         Playwright playwright = Playwright.create();
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setHeadless(false).setChannel("chrome"));
-            BrowserContext context = browser.newContext();
+//        BrowserType chromium = playwright.chromium();
+//        Browser browser1 = chromium.launch();
+//        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions();
+//        launchOptions.setHeadless(false).setChannel("chrome");
+//
+//
+//        BrowserContext browserContext = browser1.newContext();
+//        Page page1 = browserContext.newPage();
+//        page1.navigate("https://letcode.in/alert");
+
+        BrowserContext context = browser.newContext();
             Page page = context.newPage();
             page.navigate("https://letcode.in/alert");
 //            page.onDialog(dialog -> {

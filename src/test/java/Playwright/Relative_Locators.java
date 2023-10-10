@@ -22,7 +22,7 @@ public class Relative_Locators {
         page = browserContext.newPage();
         page.navigate("https://selectorshub.com/xpath-practice-page/");
         SelectorCheckBox("John.Smith");
-page.locator("input:near(:text('Help?'))").type("demo");
+        page.locator("input:near(:text('Help?'))").type("demo");
 
     }
 }

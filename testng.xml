@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="5" parallel="tests" verbose="4">
+    <listeners>
+        <listener class-name="Utilities.ExtentReport"></listener>
+    </listeners>
+    <test name="login">
+        <classes>
+            <class name="Runner.LoginIntoIt" />
+        </classes>
+    </test>
+    <test name="ForgetPassword">
+        <classes>
+            <class name="Runner.LoginIntoIt">
+            </class></classes>
+    </test>
+</suite>
