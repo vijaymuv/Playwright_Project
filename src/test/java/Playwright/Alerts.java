@@ -10,6 +10,7 @@ class Mydialog implements Consumer<Dialog>{
     public void accept(Dialog alert) {
         System.out.println(alert.message());
         alert.accept("Jva");
+        System.out.println("alerts handling");
     }
 }
 public class Alerts {
